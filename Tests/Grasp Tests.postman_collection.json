@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "fe4ce5fb-fd39-4929-a63a-64104b6f2024",
+		"name": "Grasp Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25560266"
+	},
+	"item": [
+		{
+			"name": "GET Sensor List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-sensors",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Sensor Range Data 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-sensor-range-data?id=100022&start=2022-11-08T04:00:04.317801&end=2022-11-08T04:35:24.252608",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-sensor-range-data"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "100022"
+						},
+						{
+							"key": "start",
+							"value": "2022-11-08T04:00:04.317801"
+						},
+						{
+							"key": "end",
+							"value": "2022-11-08T04:35:24.252608"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Sensor Range Data 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/get-sensor-range-data?id=100013&start=2022-11-08T04:00:04.317801&end=2022-11-08T04:35:24.252608",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"get-sensor-range-data"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "100013"
+						},
+						{
+							"key": "start",
+							"value": "2022-11-08T04:00:04.317801"
+						},
+						{
+							"key": "end",
+							"value": "2022-11-08T04:35:24.252608"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Sensor Data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
